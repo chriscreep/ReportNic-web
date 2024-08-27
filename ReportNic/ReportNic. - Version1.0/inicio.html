@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReportNic</title>
+    <link rel="stylesheet" href="inciostyle.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <h1>ReportNic.</h1>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </header>
+    <div class="overlay" onclick="toggleMenu()"></div>
+    <div class="content">
+    </div>
+    <nav class="side-menu">
+        <ul>
+            <li><button onclick="window.location.href='index.html'">Cerrar Sesión</button></li>
+            <li><button onclick="window.location.href='inicio.html'">Inicio</button></li>
+            <li><button onclick="window.location.href='perfil.html'">Perfil</button></li>
+            <li><button onclick="window.location.href='pacientes.html'">Pacientes</button></li>
+            <li><button onclick="window.location.href='ajustes.html'">Ajustes</button></li>
+            <li><button onclick="window.location.href='contactanos.html'">Contáctanos</button></li>
+        </ul>
+    </nav>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
